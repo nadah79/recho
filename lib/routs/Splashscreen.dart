@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:recho/routs/HomePage.dart';
+import 'package:recho/routs/MyBoocket.dart';
+import 'package:recho/routs/MyData.dart';
+import 'package:recho/routs/MyProfile.dart';
 import 'package:recho/routs/Register.dart';
+import 'package:recho/routs/login.dart';
 
 import 'CallLogScreen.dart';
 
@@ -48,8 +53,103 @@ class _SplashscreenState extends State<Splashscreen> {
                         "سجل المكالمات",
                         style: TextStyle(fontSize: 20),
                       )),
+
                 ),
               ),
+              Center(
+                child: MaterialButton(
+                  color: Colors.blue,
+                  textColor: Colors.white,
+                  onPressed: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (context) => Myboocket()));
+
+                  },
+                  child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                      child: Text(
+                        "محفظتي",
+                        style: TextStyle(fontSize: 20),
+                      )
+                  ),
+                ),
+              ),
+
+              Center(
+                child: MaterialButton(
+                  color: Colors.blue,
+                  textColor: Colors.white,
+                  onPressed: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (context) =>  Mydata()));
+
+                  },
+                  child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                      child: Text(
+                        "بياناتي",
+                        style: TextStyle(fontSize: 20),
+                      )
+                  ),
+                ),
+              ),
+              Center(
+                child: MaterialButton(
+                  color: Colors.blue,
+                  textColor: Colors.white,
+                  onPressed: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (context) =>  Homepage()));
+
+                  },
+                  child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                      child: Text(
+                        "الصفحه الرئيسيه",
+                        style: TextStyle(fontSize: 20),
+                      )
+                  ),
+                ),
+              ),
+
+              Center(
+                child: MaterialButton(
+                  color: Colors.blue,
+                  textColor: Colors.white,
+                  onPressed: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (context) =>  Login()));
+
+                  },
+                  child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                      child: Text(
+                        "تسجيل دخول",
+                        style: TextStyle(fontSize: 20),
+                      )
+                  ),
+                ),
+              ),
+
+              Center(
+                child: MaterialButton(
+                  color: Colors.blue,
+                  textColor: Colors.white,
+                  onPressed: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (context) =>  Myprofile()));
+
+                  },
+                  child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                      child: Text(
+                        "حسابي الشحصي",
+                        style: TextStyle(fontSize: 20),
+                      )
+                  ),
+                ),
+              ),
+
             ],
           ),
 
