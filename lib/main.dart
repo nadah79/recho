@@ -22,6 +22,7 @@ class _MyAppState extends State<MyApp> {
       MaterialApp(
         debugShowCheckedModeBanner: false,
         home:
+            // supportedLocales: const [Locale('ar')]
         Splashscreen(),
       );
   }

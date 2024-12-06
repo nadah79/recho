@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Myboocket extends StatefulWidget {
-  const Myboocket({super.key});
+class WalletScreen extends StatefulWidget {
+  const WalletScreen({super.key});
 
   @override
-  State<Myboocket> createState() => _MyboocketState();
+  State<WalletScreen> createState() => _WalletScreenState();
 }
 
-class _MyboocketState extends State<Myboocket> {
+class _WalletScreenState extends State<WalletScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +16,7 @@ class _MyboocketState extends State<Myboocket> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text('محفظتي'),
+
             TextButton(
               onPressed: () {},
               child: Text(
@@ -24,6 +24,7 @@ class _MyboocketState extends State<Myboocket> {
                 style: TextStyle(color: Colors.white),
               ),
             ),
+            Text('محفظتي'),
           ],
         ),
       ),
@@ -81,13 +82,13 @@ class _MyboocketState extends State<Myboocket> {
             Center(
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green,
+                  backgroundColor: Colors.blue,
                   padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                 ),
                 onPressed: () {},
                 child: Text(
                   'شحن الرصيد',
-                  style: TextStyle(fontSize: 16),
+                  style: TextStyle(fontSize: 16,color: Colors.white),
                 ),
               ),
             ),
@@ -116,7 +117,7 @@ class _MyboocketState extends State<Myboocket> {
           SizedBox(height: 10),
           Text(
             balance,
-            style: TextStyle(fontSize: 16, color: Colors.green),
+            style: TextStyle(fontSize: 16, color: Colors.blue),
           ),
         ],
       ),

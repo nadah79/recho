@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recho/routs/HomePage.dart';
-import 'package:recho/routs/MyBoocket.dart';
-import 'package:recho/routs/MyData.dart';
+import 'package:recho/routs/WalletScreen.dart';
+import 'package:recho/routs/ProfileForm.dart';
 import 'package:recho/routs/MyProfile.dart';
 import 'package:recho/routs/Register.dart';
 import 'package:recho/routs/login.dart';
@@ -28,7 +28,7 @@ class _SplashscreenState extends State<Splashscreen> {
                   textColor: Colors.white,
                   onPressed: () {
                     Navigator.push(
-                        context, MaterialPageRoute(builder: (context) => Register()));
+                        context, MaterialPageRoute(builder: (context) => RegisterScreen()));
                   },
                   child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 30.0),
@@ -62,7 +62,7 @@ class _SplashscreenState extends State<Splashscreen> {
                   textColor: Colors.white,
                   onPressed: () {
                     Navigator.push(
-                        context, MaterialPageRoute(builder: (context) => Myboocket()));
+                        context, MaterialPageRoute(builder: (context) => WalletScreen()));
 
                   },
                   child: Padding(
@@ -81,7 +81,7 @@ class _SplashscreenState extends State<Splashscreen> {
                   textColor: Colors.white,
                   onPressed: () {
                     Navigator.push(
-                        context, MaterialPageRoute(builder: (context) =>  Mydata()));
+                        context, MaterialPageRoute(builder: (context) =>  ProfileForm()));
 
                   },
                   child: Padding(
